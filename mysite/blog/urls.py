@@ -15,4 +15,5 @@ urlpatterns = [
     path('comment/<int:pk>/approve/', views.comment_approve, name='comment_approve'),
     path('comment/<int:pk>/remove/', views.comment_remove, name='comment_remove'),
     path('connectfour/',views.ConnectFourView.as_view(),name='connectfour'),
+    path('tictactoe/',views.TicTacToeViews.as_view(),name='tictactoe'),
 ]
