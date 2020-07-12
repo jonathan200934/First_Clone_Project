@@ -36,8 +36,6 @@
           <a class="nav-item nav-link" href="https://www.linkedin.com/in/jonathan-jia-jun-liew-b40112168/">LinkedIn</a>
           <a class="nav-item nav-link" href="{% url 'connectfour' %}">ConnectFour</a>
           <a class="nav-item nav-link" href="{% url 'tictactoe' %}">TicTacToe</a>
-        </div>
-        <div class="navbar-nav align-items-center ml-auto">
           {% if user.is_authenticated %}
             <a class="nav-item nav-link" href="{% url 'post_new' %}">New Post</a>
             <a class="nav-item nav-link" href="{% url 'post_draft_list' %}">Drafts</a>
@@ -53,16 +51,11 @@
 
 
     {# The actual blog posts#}
-          <div class="content container">
-              <div class="row">
-                  <div class="col-md-8">
-                    <div class="blog_posts">
-                      {% block content %}
-                      {% endblock %}
-
-                    </div>
-                  </div>
-              </div>
+          <div class="content container jumbotron">
+            <div class="blog_posts">
+              {% block content %}
+              {% endblock %}
+            </div>
           </div>
 
     {# SCRIPTS#}
