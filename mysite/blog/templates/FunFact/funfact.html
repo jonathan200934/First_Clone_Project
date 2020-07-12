@@ -1,5 +1,24 @@
 {% extends "blog/base.html" %}
+{% load static %}
 
 {% block content %}
+<h1>About Github</h1>
+<hr class="my-4">
+<h4>To revert(go back) to the commit you want in your project(everything including files and changes! )</h4>
+<br>
+<p>You can first take a look at your commit log at github or type in 'git log' in your terminal, I will use github as example</p>
+<style>
+  img.autoresize {
+    height: auto;
+    width: 100%;
+  }
+</style>
+<img class='autoresize' src="{% static 'img/img1.png' %}" alt="Sorry can't display">
+<hr>
+<p>For example, I want to revert back to commit 123456, In my terminal I will type in 'git reset --hard (123456)'</p>
+<img class='autoresize' src="{% static 'img/img2.png' %}" alt="Sorry can't display">
+<hr>
+<p>If you wish your remote repository also rolled back to your local commit do: git push 'reponame' -f, notice it will erase all the commit after the commit you push!</p>
+
 
 {% endblock %}
