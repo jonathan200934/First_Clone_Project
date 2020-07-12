@@ -16,4 +16,6 @@ urlpatterns = [
     path('comment/<int:pk>/remove/', views.comment_remove, name='comment_remove'),
     path('connectfour/',views.ConnectFourView.as_view(),name='connectfour'),
     path('tictactoe/',views.TicTacToeViews.as_view(),name='tictactoe'),
+    path('sql/',views.SQLViews.as_view(),name='sql'),
+    path('funfact/',views.FunFactVIews.as_view(),name='funfact')
 ]

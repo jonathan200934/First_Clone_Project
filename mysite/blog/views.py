@@ -12,6 +12,12 @@ from django.urls import reverse_lazy
 from django.contrib.auth.mixins import LoginRequiredMixin
 
 # Create your views here.
+class SQLViews(TemplateView):
+    template_name = 'SQL/sql.html'
+
+class FunFactVIews(TemplateView):
+    template_name = 'FunFact/funfact.html'
+
 class TicTacToeViews(TemplateView):
     template_name = 'TicTacToe/tictactoe.html'
 
